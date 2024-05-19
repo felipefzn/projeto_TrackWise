@@ -12,14 +12,11 @@ O Pórtico Free Flow é um sistema de monitoramento em tempo real projetado para
 
 ## Tecnologias Utilizadas
 - **Frontend:** HTML, CSS, JavaScript, Bootstrap
-- **Backend:** Python, Flask (ou outra tecnologia de backend de sua escolha)
-- **Banco de Dados:** MySQL (ou outro sistema de gerenciamento de banco de dados relacional)
-- **Outras Tecnologias:** OpenCV, TensorFlow, AWS, Google Cloud, Azure
-
-- Licença
+- 
+## Licença
 Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
 
-Contato
+##Contato
 Para dúvidas ou mais informações, entre em contato com:
 
 Nome: [Felipe Fazan] <br>
