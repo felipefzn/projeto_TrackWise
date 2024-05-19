@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Pórtico Free Flow</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2 class="text-center">Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Usuário</label>
+                <input type="text" class="form-control" id="username" placeholder="Digite seu usuário" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" class="form-control" id="password" placeholder="Digite sua senha" required>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Entrar</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Aqui você pode adicionar a lógica de autenticação se necessário
+            // Se a autenticação for bem-sucedida, redireciona para a página do sistema
+            window.location.href = 'dashboard.html'; // Altere para a página inicial do sistema
+        });
+    </script>
+</body>
+</html>

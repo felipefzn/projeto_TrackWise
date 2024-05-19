@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Pórtico Free Flow</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .bg {
+            background-image: url('https://via.placeholder.com/1920x1080'); /* Link para uma imagem de fundo */
+            height: 100%; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .overlay {
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Overlay escuro */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .content {
+            max-width: 600px;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+        }
+        .btn-login {
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <a class="navbar-brand" href="#">Pórtico Free Flow</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="btn btn-light btn-login" href="#about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-light btn-login" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bg">
+        <div class="overlay">
+            <div class="content">
+                <h1>Bem-vindo ao Sistema de Monitoramento em Tempo Real</h1>
+                <p class="lead">Monitoramento inteligente e eficiente do Pórtico Free Flow.</p>
+                <a class="btn btn-success btn-lg" href="login.html" role="button">Login</a>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5" id="about">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Sistema de Monitoramento em Tempo Real</h1>
+            <p class="lead">Pórtico Free Flow</p>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                <h2>Arquitetura do Sistema</h2>
+            </div>
+            <div class="card-body">
+                <p>O sistema é composto por câmeras, antenas RFID, sensores de faixa, servidores e uma interface de usuário para monitoramento e visualização dos dados em tempo real.</p>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                <h2>Monitoramento dos Equipamentos</h2>
+            </div>
+            <div class="card-body">
+                <p>Nossas câmeras capturam imagens dos veículos, enquanto as antenas RFID realizam leituras de tags para identificação. Sensores de faixa monitoram o fluxo de tráfego, e alertas de status notificam sobre problemas nos equipamentos.</p>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                <h2>Processamento de Dados</h2>
+            </div>
+            <div class="card-body">
+                <p>Os dados são capturados e analisados em tempo real usando algoritmos avançados. As informações são armazenadas em um banco de dados para fácil acesso e consulta.</p>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                <h2>Interface de Visualização</h2>
+            </div>
+            <div class="card-body">
+                <p>Nosso dashboard em tempo real oferece uma visualização clara do status dos equipamentos e dos dados dos veículos. Inclui mapas, gráficos e relatórios detalhados.</p>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                <h2>Funcionalidades Extras</h2>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>Reconhecimento de Placas</li>
+                    <li>Detecção de Infrações</li>
+                    <li>Integração com Outras Plataformas</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                <h2>Tecnologias Utilizadas</h2>
+            </div>
+            <div class="card-body">
+                <p>Utilizamos tecnologias de ponta como Python, JavaScript, OpenCV, TensorFlow, e plataformas de nuvem como AWS, Google Cloud e Azure para garantir um desempenho robusto e escalável.</p>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                <h2>Segurança</h2>
+            </div>
+            <div class="card-body">
+                <p>A segurança dos dados é uma prioridade. Implementamos criptografia dos dados e controles de acesso robustos para garantir a proteção e a privacidade das informações.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-success text-white text-center py-3">
+        &copy; 2024 Pórtico Free Flow. Todos os direitos reservados.
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

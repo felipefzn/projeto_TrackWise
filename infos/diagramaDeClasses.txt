@@ -1,0 +1,113 @@
+Descrição Textual do Diagrama de Classes:
+Classe Usuario
+
+Atributos:
+id: int
+nome: String
+email: String
+senha: String
+Métodos:
+login(): boolean
+logout(): void
+visualizarDashboard(): void
+Classe Equipamento
+
+Atributos:
+id: int
+tipo: String (ex: câmera, antena RFID)
+status: String
+localizacao: String
+Métodos:
+atualizarStatus(): void
+obterDados(): String
+Classe Veiculo
+
+Atributos:
+placa: String
+tagRFID: String
+imagem: String
+horarioPassagem: DateTime
+Métodos:
+registrarPassagem(): void
+Classe Monitoramento
+
+Atributos:
+id: int
+veiculo: Veiculo
+equipamento: Equipamento
+dataHora: DateTime
+statusEquipamento: String
+Métodos:
+registrarEvento(): void
+gerarRelatorio(): String
+Classe Dashboard
+
+Atributos:
+id: int
+usuario: Usuario
+listaMonitoramento: List<Monitoramento>
+Métodos:
+visualizarDados(): void
+gerarGraficos(): void
+gerarRelatorios(): void
+
++-----------------+
+|     Usuario     |
++-----------------+
+| - id: int       |
+| - nome: String  |
+| - email: String |
+| - senha: String |
++-----------------+
+| + login(): boolean        |
+| + logout(): void          |
+| + visualizarDashboard(): void |
++-----------------+
+
++-------------------+
+|   Equipamento     |
++-------------------+
+| - id: int         |
+| - tipo: String    |
+| - status: String  |
+| - localizacao: String |
++-------------------+
+| + atualizarStatus(): void |
+| + obterDados(): String    |
++-------------------+
+
++------------------+
+|     Veiculo      |
++------------------+
+| - placa: String  |
+| - tagRFID: String|
+| - imagem: String |
+| - horarioPassagem: DateTime |
++------------------+
+| + registrarPassagem(): void |
++------------------+
+
++----------------------+
+|    Monitoramento     |
++----------------------+
+| - id: int            |
+| - veiculo: Veiculo   |
+| - equipamento: Equipamento |
+| - dataHora: DateTime |
+| - statusEquipamento: String |
++----------------------+
+| + registrarEvento(): void |
+| + gerarRelatorio(): String |
++----------------------+
+
++----------------------+
+|      Dashboard       |
++----------------------+
+| - id: int            |
+| - usuario: Usuario   |
+| - listaMonitoramento: List<Monitoramento> |
++----------------------+
+| + visualizarDados(): void |
+| + gerarGraficos(): void   |
+| + gerarRelatorios(): void |
++----------------------+

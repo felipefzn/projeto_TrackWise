@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Pórtico Free Flow</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <a class="navbar-brand" href="#">Pórtico Free Flow</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="monitoramento.html">Monitoramento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dados.html">Dados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="jumbotron">
+            <h1 class="display-4">Bem-vindo ao Pórtico Free Flow</h1>
+            <p class="lead">Monitoramento em tempo real dos status dos equipamentos e informações dos veículos passantes.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        Status dos Equipamentos
+                    </div>
+                    <div class="card-body">
+                        <p>Câmeras: Online</p>
+                        <p>Antenas RFID: Online</p>
+                        <p>Sensores de Faixa: Online</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        Tráfego Atual
+                    </div>
+                    <div class="card-body">
+                        <p>Veículos por minuto: 20</p>
+                        <p>Tempo médio de passagem: 5s</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        Últimos Alertas
+                    </div>
+                    <div class="card-body">
+                        <p>14:35 - Câmera 3 offline</p>
+                        <p>14:40 - Antena RFID 2 leitura falhada</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
