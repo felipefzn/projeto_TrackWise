@@ -22,7 +22,7 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para m
 Contato
 Para dúvidas ou mais informações, entre em contato com:
 
-Nome: [Felipe Fazan]
-Email: [felipeffazandebrito@gmail.com]
-LinkedIn: [https://www.linkedin.com/in/felipefazan/]
+Nome: [Felipe Fazan] <br>
+Email: [felipeffazandebrito@gmail.com] <br>
+LinkedIn: [https://www.linkedin.com/in/felipefazan/] <br>
 © 2024 Pórtico Free Flow. Todos os direitos reservados.
