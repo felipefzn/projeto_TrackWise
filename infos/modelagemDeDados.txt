@@ -1,0 +1,54 @@
+Tabela Usuarios
+
+IdUsuario: UNIQUEIDENTIFIER, PRIMARY KEY, AUTO_INCREMENT
+nome: VARCHAR(100), NOT NULL
+email: VARCHAR(100), NOT NULL, UNIQUE
+senha: VARCHAR(255), NOT NULL
+
+Tabela Equipamentos
+idEquipamento: INT, PRIMARY KEY, AUTO_INCREMENT
+tipo: VARCHAR(50), NOT NULL
+status: VARCHAR(50), NOT NULL
+localizacao: VARCHAR(100), NOT NULL
+
+Tabela Veiculos
+IdVeiculo: UNIQUEIDENTIFIER, PRIMARY KEY, AUTO_INCREMENT
+placa: VARCHAR(10), NOT NULL
+tagRFID: VARCHAR(50), NOT NULL
+imagem: VARCHAR(255), NOT NULL
+horarioPassagem: DATETIME, NOT NULL
+
+Tabela Monitoramentos
+IdMonitoramento: UNIQUEIDENTIFIER, PRIMARY KEY, AUTO_INCREMENT
+veiculo_placa: VARCHAR(10), NOT NULL, FOREIGN KEY REFERENCES Veiculos(placa)
+IdVeiculo: UNIQUEIDENTIFIER, NOT NULL, FOREIGN KEY REFERENCES Equipamentos(IdVeiculo)
+dataHora: DATETIME, NOT NULL
+statusEquipamento: VARCHAR(50), NOT NULL
+
+Tabela Dashboards
+id: INT, PRIMARY KEY, AUTO_INCREMENT
+usuario_id: INT, NOT NULL, FOREIGN KEY REFERENCES Usuarios(id)
+monitoramento_id: INT, NOT NULL, FOREIGN KEY REFERENCES Monitoramentos(id)
+
+MODELO RELACIONAL:
+
++--------------+      +--------------+      +--------------+
+|  Usuarios    |      | Equipamentos |      |   Veiculos   |
++--------------+      +--------------+      +--------------+
+| id (PK)      |----->| id (PK)      |      | placa (PK)   |
+| nome         |      | tipo         |      | tagRFID      |
+| email        |      | status       |      | imagem       |
+| senha        |      | localizacao  |      | horarioPassagem |
++--------------+      +--------------+      +--------------+
+                        ^                          |
+                        |                          |
+                        |                          v
+                 +-------------------+      +---------------------+
+                 |   Monitoramentos  |      |    Dashboards       |
+                 +-------------------+      +---------------------+
+                 | id (PK)           |      | id (PK)             |
+                 | veiculo_placa (FK)|<-----| usuario_id (FK)     |
+                 | equipamento_id (FK)|      | monitoramento_id (FK) |
+                 | dataHora          |      +---------------------+
+                 | statusEquipamento |
+                 +-------------------+
