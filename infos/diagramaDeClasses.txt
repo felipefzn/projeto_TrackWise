@@ -10,8 +10,8 @@ Métodos:
 login(): boolean
 logout(): void
 visualizarDashboard(): void
-Classe Equipamento
 
+Classe Equipamento
 Atributos:
 id: int
 tipo: String (ex: câmera, antena RFID)
@@ -20,31 +20,31 @@ localizacao: String
 Métodos:
 atualizarStatus(): void
 obterDados(): String
-Classe Veiculo
 
+Classe Veiculo
 Atributos:
 placa: String
-tagRFID: String
-imagem: String
+tagRFID: string
+imagem: string
 horarioPassagem: DateTime
 Métodos:
 registrarPassagem(): void
-Classe Monitoramento
 
+Classe Monitoramento
 Atributos:
-id: int
-veiculo: Veiculo
-equipamento: Equipamento
+IdMonitoramento: Guid
+IdVeiculo : Guid
+idEquipamento: Guid
 dataHora: DateTime
 statusEquipamento: String
 Métodos:
 registrarEvento(): void
 gerarRelatorio(): String
-Classe Dashboard
 
+Classe Dashboard
 Atributos:
-id: int
-usuario: Usuario
+IdDashboard : Guid
+IdUsuario : Guid
 listaMonitoramento: List<Monitoramento>
 Métodos:
 visualizarDados(): void
