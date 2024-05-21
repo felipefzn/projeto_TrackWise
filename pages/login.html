@@ -23,7 +23,7 @@
         }
         .login-container h2 {
             margin-bottom: 20px;
-            color: #4CAF50;
+            color: cyan;
         }
     </style>
 </head>
@@ -39,8 +39,10 @@
                 <label for="password">Senha</label>
                 <input type="password" class="form-control" id="password" placeholder="Digite sua senha" required>
             </div>
-            <button type="submit" class="btn btn-success btn-block">Entrar</button>
+            <button type="submit" class="btn btn-info btn-block">Entrar</button>      
+            <button type="menu" class="btn btn-info btn-block mt-2">Voltar</button>      
         </form>
+            
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -50,6 +52,11 @@
         document.getElementById('loginForm').addEventListener('submit', function(event) {
             event.preventDefault();           
             window.location.href = 'dashboard.html';
+        });
+
+        document.getElementById('loginForm').addEventListener('menu', function(event) {
+            event.preventDefault();           
+            window.location.href = 'index.html';
         });
     </script>
 </body>
